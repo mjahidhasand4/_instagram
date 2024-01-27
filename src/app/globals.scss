@@ -100,6 +100,9 @@ input {
       margin: 0 auto;
     }
 
+    & > div:first-child {
+    }
+
     form {
       button {
         width: 100%;
@@ -172,6 +175,33 @@ input {
   }
 }
 
+.sign-up {
+  margin: 12px 0 0;
+
+  & > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $secondaryText;
+  }
+
+  & > button:first-of-type {
+    width: 100%;
+    margin: 18px 0;
+  }
+
+  .or {
+    margin: 0 0 18px;
+  }
+
+  form {
+    label {
+      margin: 0 0 6px;
+    }
+  }
+}
+
 .or {
   width: 100%;
   margin: 10px 0 18px;
@@ -221,6 +251,13 @@ input {
     height: 16px;
     background: url(/icons/sprite2.png) no-repeat;
     background-position: -414px -259px;
+  }
+
+  &.fb-lite {
+    width: 16px;
+    height: 16px;
+    background: url(/icons/sprite2.png) no-repeat;
+    background-position: -414px -300px;
   }
 }
 

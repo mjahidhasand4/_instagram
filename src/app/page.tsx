@@ -37,35 +37,57 @@ const Home = () => {
 
             <div>
               {/* Log in */}
-              <div className="log-in">
-                <form>
-                  <Input
-                    name="user"
-                    placeholder="Phone number, username, or email"
-                  />
-                  <Input
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                  />
-                  <button disabled className="button primary">
-                    Log in
+              {false && (
+                <div className="log-in">
+                  <form>
+                    <Input
+                      name="user"
+                      placeholder="Phone number, username, or email"
+                    />
+                    <Input
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                    />
+                    <button disabled className="button primary">
+                      Log in
+                    </button>
+                  </form>
+
+                  <div className="or">
+                    <span>or</span>
+                  </div>
+
+                  <button>
+                    <i className="icon fb" />
+                    <span>Log in with Facebook</span>
                   </button>
-                </form>
+
+                  <button className="text link">Forgot password?</button>
+                </div>
+              )}
+
+              {/* Sign up */}
+              <div className="sign-up">
+                <p>Sign up to see photos and videos from your friends.</p>
+
+                <button className="button primary">
+                  <i className="icon fb-lite"></i>
+                  <span>Log in with Facebook</span>
+                </button>
 
                 <div className="or">
                   <span>or</span>
                 </div>
 
-                <button>
-                  <i className="icon fb" />
-                  <span>Log in with Facebook</span>
-                </button>
-
-                <button className="text link">Forgot password?</button>
+                <form>
+                  <Input name="user" placeholder="Mobile Number or Email" />
+                  <Input name="name" placeholder="Full Name" />
+                  <Input name="username" placeholder="Username" />
+                  <Input name="password" type="password" placeholder="Password" />
+                  <button className="button primary">Sign up</button>
+                </form>
               </div>
-
-              {/* Sign up */}
             </div>
           </div>
 
@@ -82,7 +104,10 @@ const Home = () => {
             <span>Get the app.</span>
 
             <div>
-              <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.instagram.android"
+                target="_blank"
+              >
                 <img
                   src="/images/google-play.png"
                   alt="Get it on Google Play"
