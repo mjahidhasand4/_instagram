@@ -1,6 +1,8 @@
 $primaryButton: #0095f6;
 $primaryButtonHover: #1877f2;
 
+$secondaryButton: #262626;
+
 $linkText: #00376b;
 $secondaryText: #737373;
 
@@ -202,6 +204,68 @@ input {
   }
 }
 
+.reset-password {
+  border: 1px solid $stroke;
+
+  & > .icon {
+    margin: 24px auto 16px;
+  }
+
+  & > span:first-of-type {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $secondaryText;
+    margin: 16px 28px;
+  }
+
+  & > span:last-of-type {
+    text-align: center;
+    margin: 12px 28px 32px;
+    display: block;
+  }
+
+  form {
+    margin: 0 28px;
+
+    button {
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+
+  & > button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $secondaryButton;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:first-of-type {
+      margin: 0 28px 84px;
+    }
+
+    &:last-child {
+      height: 44px;
+      border: 1px solid $stroke;
+      border-radius: 2px;
+      background: $secondaryBackground;
+    }
+  }
+}
+
 .or {
   width: 100%;
   margin: 10px 0 18px;
@@ -258,6 +322,14 @@ input {
     height: 16px;
     background: url(/icons/sprite2.png) no-repeat;
     background-position: -414px -300px;
+  }
+
+  &.lock {
+    width: 96px;
+    height: 96px;
+    background: url(/icons/sprite2.png);
+    background-repeat: no-repeat;
+    background-position: -130px 0;
   }
 }
 
